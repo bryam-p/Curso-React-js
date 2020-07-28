@@ -7,8 +7,15 @@ describe('Pruebas en 02-template-string.js', () => {
         const nombre = 'Bryam';
 
         const saludo = getSaludo(nombre);
-        console.log(saludo);
 
+        expect(saludo).toBe('Hola ' + nombre + '!');
+        console.log(saludo);
     })
+
+    test('getSaludo debe de retornar Hola Bryam! si no hay argumento ', () => {
+        const saludo = getSaludo();
+        expect( saludo ).toBe( 'Hola Carlos!');
+    })
+    
 
 })
