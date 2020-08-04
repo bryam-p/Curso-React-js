@@ -1,16 +1,76 @@
 * {
-  padding: 0;
-  margin: 0;
   font-family: Helvetica, Arial;
 }
 
 body {
-  padding: 60px;
+  padding: 10px;
+  background: url('./images/original.png');
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 input {
-  font-size: 1.2rem;
-  width: 80%;
+  font-size: 1.5rem;
+  max-width: 600px;
+  width: 100%;
   margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
+.contenedor {
+  max-width: 1600px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.contenedor h3 {
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.titulo {
+  font-size: 2rem;
+  color: rgb(43, 154, 251);
+}
+
+.card {
+  max-width: 150px;
+  width: 100%;
+  align-content: center;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  background: white;
+  -webkit-box-shadow: 4px -5px 28px -6px rgba(173, 173, 173, 1);
+  -moz-box-shadow: 4px -5px 28px -6px rgba(173, 173, 173, 1);
+  box-shadow: 4px -5px 28px -6px rgba(173, 173, 173, 1);
+  margin: 5px;
+}
+
+.card:hover {
+  background: rgb(236, 236, 236);
+}
+
+.card img {
+  width: 100%;
+  max-height: 100px;
+}
+
+.card p {
+  border-top: 1px solid rgb(197, 197, 197);
+  padding-top: 10px;
+}
